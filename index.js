@@ -29,7 +29,7 @@ const main = async () => {
   
   const filePath = `/Users/tim/Pictures/Wallpapers/${dateIsoString}.jpg`;
   await download(imageUrl, filePath);
-  await wallpaper.set(filePath);
+  await wallpaper.set(filePath, {screen: 'all'});
 };
 
 main()
